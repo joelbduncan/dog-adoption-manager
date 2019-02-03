@@ -1,15 +1,12 @@
 <?php
 // include the configs
-require_once("Login/config/db.php");
-
+require_once("config.php");
 
 // load the login class
 require_once("Login/classes/Login.php");
 
-
 // create a login object.
 $login = new Login();
-
 
 // ... ask if we are logged in here:
 if ($login->isUserLoggedIn() == true) {
@@ -17,7 +14,7 @@ if ($login->isUserLoggedIn() == true) {
 // include("Login/views/logged_in.php");
 } else {
 // the user is not logged in...
-header( 'Location: Login' ) ;
+header( 'Location: /manage/Login' ) ;
 }
 ?>
   

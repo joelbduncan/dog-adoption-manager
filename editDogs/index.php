@@ -171,7 +171,7 @@ header( 'Location: /manage/Login' ) ;
         <td class="edit long_description '.$rows["id"].'">'.$rows["long_description"].'</td>
         <td class="image '.$rows["id"].'"><img src="/manage/addDog/'.$rows["image"].'" style="max-width:150px" class="img-responsive"></td>
         <td class="contact-delete">
-          <form action=delete.php?id='.$rows["id"].' method="post">
+          <form action=delete.php?id='.$rows["id"].'&image='.$rows["image"].' method="post">
           <input type="hidden" name="name" value="'.$rows["id"].'">
           <button type="submit" class="btn btn-xs btn-danger">
           <span class="glyphicon glyphicon-trash"></span> Delete
