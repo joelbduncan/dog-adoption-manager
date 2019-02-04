@@ -90,8 +90,7 @@ header( 'Location: /manage/Login' ) ;
                 </h1>
                 <hr>
 
-
-                <form id="form" action="ajaxupload.php" method="post" enctype="multipart/form-data">
+                <form id="form">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required />
@@ -100,6 +99,24 @@ header( 'Location: /manage/Login' ) ;
                     <div class="form-group">
                         <label for="email">Breed</label>
                         <input type="text" class="form-control" id="breed" name="breed" placeholder="Enter breed" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Age</label>
+                        <input type="text" class="form-control" id="age" name="age" placeholder="Enter age" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sex">Sex</label>
+                        <select class="form-control" name="sex" id="sex">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Location</label>
+                        <input type="text" class="form-control" id="location" name="location" placeholder="Enter location" required />
                     </div>
 
                     <div class="form-group">
@@ -112,7 +129,7 @@ header( 'Location: /manage/Login' ) ;
                         <textarea class="form-control rounded-0" id="long_description" name="long_description" placeholder="Detailed description" rows="3"></textarea>
                     </div>
 
-                    <input id="uploadImage" type="file" accept="image/*" name="image" />
+                    <input id="uploadImage" type="file" accept="image/*" name="image" required />
                     <div id="preview"><img src="filed.png" /></div><br>
                     <input class="btn btn-success" type="submit" value="Upload">
                 </form>

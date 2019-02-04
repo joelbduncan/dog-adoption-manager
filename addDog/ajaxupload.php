@@ -1,13 +1,3 @@
-<head lang="en">
-    <meta charset="utf-8">
-    <title>Ajax File Upload with jQuery and PHP</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" type="text/css" href="//bootswatch.com/3/flatly/bootstrap.min.css" />
-</head>
-
 <?php
 
 $valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'bmp'); // valid extensions
@@ -34,6 +24,9 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
 			echo "<img src='$path' />";
 	$name = $_POST['name'];
     $breed = $_POST['breed'];
+    $age = $_POST['age'];
+    $sex = $_POST['sex'];
+    $location = $_POST['location'];
     $short_description = $_POST['short_description'];
     $long_description = $_POST['long_description'];
 
@@ -48,9 +41,9 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
 	}
 
     //insert form data in the database
-    $insert = $db->query("INSERT dogs (name,breed,short_description,long_description,image) VALUES ('".$name."','".$breed."','".$short_description."','".$long_description."','".$path."')");
-
+    $insert = $db->query("INSERT dogs (name,breed,age,sex,location,short_description,long_description,image) VALUES ('".$name."','".$breed."','".$age."','".$sex."','".$location."','".$short_description."','".$long_description."','".$path."')");
     //echo $insert?'ok':'err';
+		
 		}
 	} 
 	else 
@@ -60,11 +53,3 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
 }
 
 ?>
-
-<br>
-<br>
-<br>
-
-<div class="alert alert-success" role="alert">
-    New dog added, <strong>Nice one!</strong>
-</div>
