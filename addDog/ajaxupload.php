@@ -29,6 +29,7 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
     $location = $_POST['location'];
     $short_description = $_POST['short_description'];
     $long_description = $_POST['long_description'];
+    $adopted = $_POST['adopted'];
 
     //include database configuration file
     include ('../config.php');
@@ -41,7 +42,7 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
 	}
 
     //insert form data in the database
-    $insert = $db->query("INSERT dogs (name,breed,age,sex,location,short_description,long_description,image) VALUES ('".$name."','".$breed."','".$age."','".$sex."','".$location."','".$short_description."','".$long_description."','".$path."')");
+    $insert = $db->query("INSERT dogs (name,breed,age,sex,location,short_description,long_description,adopted,image) VALUES ('".$name."','".$breed."','".$age."','".$sex."','".$location."','".$short_description."','".$long_description."','".$adopted."','".$path."')");
     //echo $insert?'ok':'err';
 		
 		}

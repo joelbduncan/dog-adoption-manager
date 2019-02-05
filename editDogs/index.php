@@ -141,8 +141,12 @@ header( 'Location: /manage/Login' ) ;
                 <tr class="table table-striped">
                     <th>Name</th>
                     <th>Breed</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Location</th>
                     <th>Short Description</th>
                     <th>Long Description</th>
+                    <th>Adopted</th>
                     <th>Image</th>
                 </tr>
 
@@ -167,8 +171,12 @@ header( 'Location: /manage/Login' ) ;
 
     echo '<td class="edit name '.$rows["id"].'">'.$rows["name"].'</td>
         <td class="edit breed '.$rows["id"].'">'.$rows["breed"].'</td>
+        <td class="edit age '.$rows["id"].'">'.$rows["age"].'</td>
+        <td class="edit sex '.$rows["id"].'">'.$rows["sex"].'</td>
+        <td class="edit location '.$rows["id"].'">'.$rows["location"].'</td>
         <td class="edit short_description '.$rows["id"].'">'.$rows["short_description"].'</td>
         <td class="edit long_description '.$rows["id"].'">'.$rows["long_description"].'</td>
+        <td class="edit adopted '.$rows["id"].'">'.$rows["adopted"].'</td>
         <td class="image '.$rows["id"].'"><img src="/manage/addDog/'.$rows["image"].'" style="max-width:150px" class="img-responsive"></td>
         <td class="contact-delete">
           <form action=delete.php?id='.$rows["id"].'&image='.$rows["image"].' method="post">

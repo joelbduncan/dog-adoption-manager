@@ -129,6 +129,14 @@ header( 'Location: /manage/Login' ) ;
                         <textarea class="form-control rounded-0" id="long_description" name="long_description" placeholder="Detailed description" rows="3"></textarea>
                     </div>
 
+                    <div class="form-group">
+                        <label for="adopted">Adopted</label>
+                        <select class="form-control" name="adopted" id="adopted">
+                            <option value="no">Available</option>
+                            <option value="yes">Adopted</option>
+                        </select>
+                    </div>
+
                     <input id="uploadImage" type="file" accept="image/*" name="image" required />
                     <div id="preview"><img src="filed.png" /></div><br>
                     <input class="btn btn-success" type="submit" value="Upload">
