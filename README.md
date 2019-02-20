@@ -30,7 +30,7 @@ Login
 
 | Adoption Manager                             | Adoption Page                                |
 |----------------------------------------------|----------------------------------------------|
-| ![alt text](https://i.imgur.com/yVNlGEu.jpg) | ![alt text](https://i.imgur.com/RRTDWZU.jpg) |
-| ![alt text](https://i.imgur.com/4CqEoy8.jpg) | ![alt text](https://i.imgur.com/wOmYjmD.jpg) |
-| ![alt text](https://i.imgur.com/vSBvLT0.jpg) | ![alt text](https://i.imgur.com/CTcZKIr.jpg) |
-| ![alt text](https://i.imgur.com/yUeI2DL.png) | ![alt text](https://i.imgur.com/Jl4C1pM.png) |
+| ![alt text](https://i.imgur.com/yVNlGEu.jpg) | ![alt text](https://i.imgur.com/dyXrm16.png) |
+| ![alt text](https://i.imgur.com/MBOsXMc.png) | ![alt text](https://i.imgur.com/QsNtwVn.jpg) |
+| ![alt text](https://i.imgur.com/Tm6QMHX.png) | ![alt text](https://i.imgur.com/yicSvQy.jpg) |
+| ![alt text](https://i.imgur.com/yUeI2DL.png) | ![alt text](https://i.imgur.com/MjdoOoJ.jpg) |
