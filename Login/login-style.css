@@ -1,8 +1,6 @@
 /* CSS Document */
-/* ---------- FONTAWESOME ---------- */
-/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
-/* ---------- http://weloveiconfonts.com/ ---------- */
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 /* ---------- FONTAWESOME ---------- */
 [class*="fontawesome-"]:before {
