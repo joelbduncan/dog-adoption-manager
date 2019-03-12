@@ -29,12 +29,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 echo '<script type="text/javascript">
-           window.location = "/manage/editDogs/"
+           window.location = "/manage/editDogList.php"
       </script>';
 
 //Define the query
 $query = "DELETE FROM hairyhounz_dogs.dogs WHERE id='" . $_GET['id'] . "' LIMIT 1";
-unlink("../addDog/" .$_GET['image']);
+unlink("../" .$_GET['image']);
 
 
 
@@ -44,13 +44,13 @@ $conn->query($query);
 if ($conn->affected_rows == 1) { 
 //if it updated
 echo '<script type="text/javascript">
-           window.location = "/manage/editDogs/"
+           window.location = "/manage/editDogList.php"
       </script>';
 
  } else { 
 //if it failed
 echo '<script type="text/javascript">
-           window.location = "/manage/editDogs/"
+           window.location = "/manage/editDogList.php"
       </script>';
 } 
 ?>

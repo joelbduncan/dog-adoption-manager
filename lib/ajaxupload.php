@@ -33,7 +33,7 @@ if (!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image']) {
     if (in_array($ext, $valid_extensions)) {
         $path = $path . strtolower($final_image);
         
-        if (move_uploaded_file($tmp, $path)) {
+        if (move_uploaded_file($tmp, '../'.$path)) {
             echo "<img src='$path' />";
             $name              = mysqli_real_escape_string($db, $_POST['name']);
             $breed             = mysqli_real_escape_string($db, $_POST['breed']);

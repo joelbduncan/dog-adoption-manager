@@ -3,7 +3,7 @@ $(document).ready(function (e) {
 	$("#form").on('submit',(function(e) {
 		e.preventDefault();
 		$.ajax({
-        	url: "ajaxupload.php",
+        	url: "lib/ajaxupload.php",
 			type: "POST",
 			data:  new FormData(this),
 			contentType: false,
@@ -26,6 +26,8 @@ $(document).ready(function (e) {
 					// view uploaded file.
 					$("#preview").html(data).fadeIn();
 					$("#form")[0].reset();	
+					$("#success").modal('show')
+					window.setTimeout(function(){$("#success").modal('hide')}, 3000);
 				}
 		    },
 		  	error: function(e) 

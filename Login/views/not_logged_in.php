@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="//bootswatch.com/3/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="login-style.css" rel="stylesheet">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
@@ -61,10 +62,10 @@
 		<form method="post" action="index.php" name="loginform">
 			<h3><font color = "#808080">Hairy Hounz Adoption System Login</font></h3>
 			<div>
-				<span class="fontawesome-user"></span><input name="user_name" type="text" placeholder="Username" required="" id="username" />
+				<span class="fa fa-user"></span><input name="user_name" type="text" placeholder="Username" required="" id="username" />
 			</div>
 			<div>
-				<span class="fontawesome-lock"></span><input name="user_password" type="password" placeholder="Password" required="" id="password" />
+				<span class="fa fa-lock"></span><input name="user_password" type="password" placeholder="Password" required="" id="password" />
 			</div>
 			<div>
 				<input type="submit"  name="login" value="Log in" />

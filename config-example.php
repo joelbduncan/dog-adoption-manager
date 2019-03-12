@@ -14,9 +14,9 @@ define("DB_PASS", "");
 //Name of Charity
 $charityName = '';
 
-//Facebook page for Charity
 
-//Link to your adoption form, page or contact form
-$charityFacebook = ''
-$adoptionForm = ''
+// Future
+// Link to your adoption form, page or contact form
+// $charityFacebook = ''
+// $adoptionForm = ''
 ?>
