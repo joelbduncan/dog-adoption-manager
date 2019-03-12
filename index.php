@@ -1,16 +1,12 @@
 <?php
-
 // include the configs
 require_once("config.php");
-
 
 // load the login class
 require_once("Login/classes/Login.php");
 
-
 // create a login object.
 $login = new Login();
-
 
 // ... ask if we are logged in here:
 if ($login->isUserLoggedIn() == true) {
