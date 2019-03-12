@@ -126,8 +126,8 @@ if($db->connect_error){
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-toolbar">
                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a class="btn btn-success" href="/manage/editDog.php?id=' . $row["id"] . ' role="button">Edit</a>
-                                    <a class="btn btn-danger" href="lib/delete.php?id=' . $row["id"] . ' role="button">Delete</a>
+                                    <a class="btn btn-success" href="/manage/editDog.php?id=' . $row["id"] . '" role="button">Edit</a>
+                                    <a class="btn btn-danger" href="lib/delete.php?id=' . $row["id"] . '" role="button">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@ if($db->connect_error){
 
             <!-- The Modal -->
             <div class="fade modal" id="var' . $row["id"] . '">
-                <div class="modal-dialog modal-lg"">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
 
                         <!-- Modal Header -->
@@ -149,7 +149,7 @@ if($db->connect_error){
                         <!-- Modal body -->
                         <div class="modal-body">
                             <h4><span class="badge ' . $badge . '">' . $adoptionStatus . '</span></h4>
-                            <h5>Breed: <strong>' . $row["breed"] .'</h5></strong>
+                            <h5>Breed: <strong>' . $row["breed"] .'</strong></h5>
                             <p>Age: <strong>' . $row["age"] .'</strong>
                             Sex: <strong>' . $row["sex"] .'</strong>
                             Location: <strong>' . $row["location"] .'</strong>
