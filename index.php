@@ -85,11 +85,9 @@ header( 'Location: /manage/Login' ) ;
     </div>
 </div>
 
-<div class="container">
-    <div class="page-header" id="banner">
-        <div>
+<div class="page-header" id="banner">
+    <div>
         <h1>Add Dog</h1>
-        </div>
     </div>
 </div>
 
