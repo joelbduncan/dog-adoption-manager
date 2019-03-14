@@ -75,6 +75,8 @@ header( 'Location: /manage/Login' ) ;
 </div>
 </div>
 
+<div class="container">
+
 <!-- The Modal -->
 <div class="fade modal" id="success">
     <div class="modal-dialog modal-sm"">
