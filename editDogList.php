@@ -36,9 +36,9 @@ header( 'Location: /manage/Login' ) ;
 
 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 <div class="container">
+    <a class="navbar-brand" href="#"><?php echo $charityName ?> Adoption Database</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> &#x2630;
     </button>
-    <a class="navbar-brand" href="#"><?php echo $charityName ?> Adoption Database</a>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="nav-item"><a href="/manage/" class="nav-link">Add Dog</a>
