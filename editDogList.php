@@ -38,11 +38,7 @@ header( 'Location: /manage/Login' ) ;
 <div class="container">
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> &#x2630;
     </button>
-    <a class="navbar-brand" href="#">
-
-        <?php echo $charityName ?>
-
-    </a>
+    <a class="navbar-brand" href="#"><?php echo $charityName ?> Adoption Database</a>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="nav-item"><a href="/manage/" class="nav-link">Add Dog</a>
@@ -76,14 +72,11 @@ if($db->connect_error){
 ?>
 
 <div class="container">
-
-<div class="page-header" id="banner">
-<div class="row">
-    <div class="col-lg-8">
-    <h1><?php echo $charityName ?> Adoption Database</h1>
-    <p class="lead">Edit Dogs<?php echo $row["name"]; ?></p>
+    <div class="page-header" id="banner">
+        <div>
+        <h1>Edit Dogs</h1>
+        </div>
     </div>
-</div>
 </div>
 
 <div class="album py-5">

@@ -39,11 +39,7 @@ header( 'Location: /manage/Login' ) ;
 <div class="container">
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> &#x2630;
     </button>
-    <a class="navbar-brand" href="#">
-
-        <?php echo $charityName ?>
-
-    </a>
+    <a class="navbar-brand" href="#"><?php echo $charityName ?> Adoption Database</a>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="active nav-item"><a href="/manage/" class="nav-link">Add Dog</a>
@@ -89,11 +85,10 @@ header( 'Location: /manage/Login' ) ;
     </div>
 </div>
 
-<div class="page-header" id="banner">
-    <div class="row">
-        <div class="col-lg-8">
-        <h1><?php echo $charityName ?> Adoption Database</h1>
-        <p class="lead">Add Dog</p>
+<div class="container">
+    <div class="page-header" id="banner">
+        <div>
+        <h1>Add Dog</h1>
         </div>
     </div>
 </div>
