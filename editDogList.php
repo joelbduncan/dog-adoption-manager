@@ -71,6 +71,7 @@ if($db->connect_error){
 
 ?>
 
+<div class="container">
 <div class="page-header" id="banner">
     <div>
         <h1>Edit Dogs</h1>
