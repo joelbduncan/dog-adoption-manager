@@ -103,13 +103,6 @@ header( 'Location: /manage/Login' ) ;
     </div>
 </div>
 
-<div class="container">
-    <div class="page-header" id="banner">
-        <div>
-        <h1>Edit Dogs<?php echo $row["name"]; ?></h1>
-        </div>
-    </div>
-</div>
 
 <form id="form">
 
