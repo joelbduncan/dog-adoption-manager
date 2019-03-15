@@ -77,9 +77,9 @@ header( 'Location: /manage/Login' ) ;
 
 <div class="container">
 
-<!-- The Modal -->
+<!-- Success Modal -->
 <div class="fade modal" id="success">
-    <div class="modal-dialog modal-sm"">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
 
             <!-- Modal Header -->
@@ -92,6 +92,31 @@ header( 'Location: /manage/Login' ) ;
             <div class="modal-body">
                 <strong><p>Sweet!</strong> Keep thoses updates coming.</p>
             </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="fade modal" id="delete">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Delete <?php echo $row["name"]; ?></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>Are you sure you want to delete <strong><?php echo $row["name"]; ?>?</strong></p>
+            </div>
+
+           <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <a class="btn btn-danger" href="lib/delete.php?id=<?php echo $_GET['id'] ?>" role="button">Delete</a>
+           </div>
 
         </div>
     </div>
@@ -156,7 +181,7 @@ header( 'Location: /manage/Login' ) ;
     <div id="preview"><img src="<?php echo $row["image"]; ?>" /></div><br>
     <input class="btn btn-success" type="submit" value="Update">
     <button onclick="goBack()" type="button" class="btn btn-info">Cancel</button>
-    <a class="btn btn-danger" href="lib/delete.php?id=<?php echo $_GET['id'] ?>" role="button">Delete</a>
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
 </form>
 
 <div id="err"></div>

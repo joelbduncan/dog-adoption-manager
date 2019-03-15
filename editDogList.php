@@ -119,7 +119,7 @@ if($db->connect_error){
                             <div class="btn-toolbar">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <a class="btn btn-success" href="/manage/editDog.php?id=' . $row["id"] . '" role="button">Edit</a>
-                                    <a class="btn btn-danger" href="lib/delete.php?id=' . $row["id"] . '" role="button">Delete</a>
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete' . $row["id"] . '">Delete</button>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,31 @@ if($db->connect_error){
                 </div>
             </div>
 
-            <!-- The Modal -->
+            <!-- Delete Modal -->
+            <div class="fade modal" id="delete' . $row["id"] . '">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Delete ' . $row["name"] . '</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>Are you sure you want to delete <strong>' . $row["name"] . '?</strong></p>
+                        </div>
+
+                       <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <a class="btn btn-danger" href="lib/delete.php?id=' . $row["id"] . '" role="button">Delete</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Modal -->
             <div class="fade modal" id="var' . $row["id"] . '">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
