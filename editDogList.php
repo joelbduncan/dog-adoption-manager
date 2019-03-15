@@ -119,6 +119,7 @@ if($db->connect_error){
                             <div class="btn-toolbar">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <a class="btn btn-success" href="/manage/editDog.php?id=' . $row["id"] . '" role="button">Edit</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#var' . $row["id"] . '">View</button>
                                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete' . $row["id"] . '">Delete</button>
                                 </div>
                             </div>
@@ -151,7 +152,7 @@ if($db->connect_error){
                 </div>
             </div>
 
-            <!-- Success Modal -->
+            <!-- Dog Modal -->
             <div class="fade modal" id="var' . $row["id"] . '">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
