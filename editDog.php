@@ -162,5 +162,11 @@ header( 'Location: /manage/Login' ) ;
 <div id="err"></div>
 <hr>
 
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
 </body>
 </html>
