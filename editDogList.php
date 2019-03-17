@@ -108,7 +108,7 @@ if($db->connect_error){
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="card mb-4 box-shadow">
                     <img class="card-img-top img-responsive" src="' . $row["image"] . '">
-                    <div class="card-body">
+                    <div class="card-body h-100">
                         <h3>
                             <p class="card-text">' . $row["name"] . '</p>
                         </h3>
@@ -172,7 +172,7 @@ if($db->connect_error){
                             Location: <strong>' . $row["location"] .'</strong>
                             <h5>Description</h5>
                             <p>' . $row["long_description"] .'</p>
-                            <img class="card-img-top" src="/manage/addDog/' . $row["image"] . '">
+                            <img class="img-fluid" src="/manage/' . $row["image"] . '">
                         </div>
 
                         <!-- Modal footer -->
