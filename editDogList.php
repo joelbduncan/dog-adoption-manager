@@ -104,6 +104,10 @@ if($db->connect_error){
             $adoptionStatus = "Available";
             $badge = "badge-info";
         }
+            if ($row["adopted"] == "asmt") {
+            $adoptionStatus = "Assessment";
+            $badge = "badge-warning";
+        }
             echo '
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="card mb-4 box-shadow">

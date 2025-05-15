@@ -174,6 +174,7 @@ header( 'Location: /manage/Login' ) ;
         <label for="adopted">Adopted</label>
         <select class="form-control" name="adopted" id="adopted" value="<?php echo $row["adopted"]; ?>">
             <option value="no" <?php if ($row["adopted"] == "no") { echo "selected"; } ?>>Available</option>
+            <option value="asmt" <?php if ($row["adopted"] == "asmt") { echo "selected"; } ?>>Assessment</option>
             <option value="yes" <?php if ($row["adopted"] == "yes") { echo "selected"; } ?>>Adopted</option>
         </select>
     </div>

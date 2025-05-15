@@ -133,6 +133,7 @@ header( 'Location: /manage/Login' ) ;
         <label for="adopted">Adopted</label>
         <select class="form-control" name="adopted" id="adopted">
             <option value="no">Available</option>
+            <option value="asmt">Assessment</option>
             <option value="yes">Adopted</option>
         </select>
     </div>
